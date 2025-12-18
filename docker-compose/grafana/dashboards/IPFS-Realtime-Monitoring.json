@@ -1,14 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_PROMETHEUS",
-      "label": "prometheus",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "prometheus",
-      "pluginName": "Prometheus"
-    }
-  ],
   "__elements": {},
   "__requires": [
     {
@@ -150,7 +140,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "P1809F7CD0C75ACF3"
       },
       "description": "Averages over all monitor pairs of the hypergeometric estimator and the coupon collector estimator.",
       "fieldConfig": {
@@ -200,7 +190,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "expr": "(avg((monitoring_size_estimator_hypergeom_size_estimate{protocol=\"\", agent_version=\"\"} > 1)) by (instance, job) +  (monitoring_size_estimator_coupon_size_estimate{protocol=\"\",agent_version=\"\"}>1))/2",
@@ -215,7 +205,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "P1809F7CD0C75ACF3"
       },
       "description": "",
       "fieldConfig": {
@@ -273,7 +263,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -291,7 +281,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "P1809F7CD0C75ACF3"
       },
       "fieldConfig": {
         "defaults": {
@@ -381,7 +371,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "expr": "monitoring_size_estimator_hypergeom_size_estimate{protocol=\"\",agent_version!=\"\"}",
@@ -396,7 +386,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "P1809F7CD0C75ACF3"
       },
       "description": "",
       "fieldConfig": {
@@ -487,7 +477,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "expr": "monitoring_size_estimator_coupon_size_estimate{protocol=\"\",agent_version!=\"\"}",
@@ -502,7 +492,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "P1809F7CD0C75ACF3"
       },
       "description": "",
       "fieldConfig": {
@@ -593,7 +583,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "expr": "sum(monitoring_size_estimator_hypergeom_size_estimate{protocol!=\"\",protocol!~\".*kad.*\",agent_version=\"\"}) by (protocol,monitor_pair)",
@@ -608,7 +598,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "P1809F7CD0C75ACF3"
       },
       "description": "",
       "fieldConfig": {
@@ -699,7 +689,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "expr": "sum(monitoring_size_estimator_coupon_size_estimate{protocol!=\"\",protocol!~\".*kad.*\",agent_version=\"\"}) by (protocol)",
@@ -714,7 +704,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "P1809F7CD0C75ACF3"
       },
       "fieldConfig": {
         "defaults": {
@@ -804,7 +794,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "expr": "(avg(monitoring_size_estimator_hypergeom_size_estimate{protocol=\"\", agent_version!=\"\"}) by (instance, job,agent_version) +  monitoring_size_estimator_coupon_size_estimate{protocol=\"\",agent_version!=\"\"})/2",
@@ -819,7 +809,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "P1809F7CD0C75ACF3"
       },
       "description": "",
       "fieldConfig": {
@@ -908,7 +898,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "expr": "monitoring_size_estimator_hypergeom_size_estimate{protocol=\"\",agent_version=\"\"} > 1",
@@ -919,7 +909,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "expr": "monitoring_size_estimator_coupon_size_estimate{protocol=\"\",agent_version=\"\"} > 1",
@@ -931,7 +921,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "expr": "sum(monitoring_size_estimator_coupon_size_estimate{protocol=\"\",agent_version!=\"\"})",
@@ -943,7 +933,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "editorMode": "code",
           "expr": "sum(avg(monitoring_size_estimator_hypergeom_size_estimate{protocol=\"\",agent_version!=\"\"}) by (agent_version,monitor_pair)) by (monitor_pair)",
@@ -994,7 +984,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Rate of Bitswap messages received per second.\nThis counts Bitswap _messages_, which in turn may include requests, responses, blocks, and block presences.\nCalculated over 30 minutes.",
           "fieldConfig": {
@@ -1072,7 +1062,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(bitswap_messages_received[30m])) by (monitor)",
@@ -1087,7 +1077,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Rate of wantlists received per second, by whether they were full or incremental.\nThis counts messages for which the wantlist is not empty.\nCalculated over a 30 minute window.",
           "fieldConfig": {
@@ -1167,7 +1157,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "(sum(rate(wantlists_received[30m])) by (monitor,full))",
@@ -1182,7 +1172,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Rate of wantlist entries received per second.\nIn sum over all entry types, request types only, and CANCEL types only.\nCalculated over a 30 minute window.",
           "fieldConfig": {
@@ -1260,7 +1250,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(wantlist_entries_received[30m])) by (monitor)",
@@ -1271,7 +1261,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(wantlist_entries_received{entry_type!=\"cancel\"}[30m])) by (monitor)",
@@ -1283,7 +1273,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(wantlist_entries_received{entry_type=\"cancel\"}[30m])) by (monitor)",
@@ -1299,7 +1289,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Rate of wantlist entries received per second, by entry type and send_dont_have flag.\nThis is calculated over a 30 minute window.",
           "fieldConfig": {
@@ -1379,7 +1369,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(wantlist_entries_received{entry_type!=\"unknown\"}[30m])) by (monitor, entry_type, send_dont_have)",
@@ -1395,7 +1385,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "",
           "fieldConfig": {
@@ -1474,7 +1464,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(bitswap_messages_received[30m])) by (monitor, origin_is_gateway)",
@@ -1489,7 +1479,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "",
           "fieldConfig": {
@@ -1568,7 +1558,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(wantlist_entries_received{entry_type!=\"cancel\",origin_country!=\"\"}[30m])) by (monitor, entry_type, origin_is_gateway)",
@@ -1582,7 +1572,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "The rate of block presence entries received per second.\nCalculated over a 30 minute window.",
           "fieldConfig": {
@@ -1660,7 +1650,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(bitswap_block_presences_received[30m])) by (monitor, presence_type)",
@@ -1675,7 +1665,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "The rate of blocks received per second.\nCalculate over a 30 minute window.",
           "fieldConfig": {
@@ -1753,7 +1743,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(bitswap_blocks_received[30m])) by (monitor)",
@@ -1807,7 +1797,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "fieldConfig": {
             "defaults": {
@@ -1886,7 +1876,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(bitswap_messages_received{origin_country!=\"\"}[30m])) by (origin_country)",
@@ -1901,7 +1891,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Rate of non-CANCEL wantlist entries received per second.\nCalculated over a 30 minute window.",
           "fieldConfig": {
@@ -1981,7 +1971,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(wantlist_entries_received{entry_type!=\"cancel\",origin_country!=\"\"}[30m])) by (origin_country)",
@@ -1996,7 +1986,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Rate of non-CANCEL wantlist entries received per second.\nCalculated over a one-day window.",
           "fieldConfig": {
@@ -2043,7 +2033,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -2061,7 +2051,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Rate of non-CANCEL wantlist entries received per second.\nCalculated over a seven-day window.",
           "fieldConfig": {
@@ -2108,7 +2098,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -2126,7 +2116,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Rate of non-CANCEL wantlist entries received per second.\nCalculated over a thirty-day window.",
           "fieldConfig": {
@@ -2173,7 +2163,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -2230,7 +2220,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "The number of open connections, in sum over all transports.\nThis counts multiple connections to the same peer multiple times, for older versions of IPFS.",
           "fieldConfig": {
@@ -2308,7 +2298,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(ipfs_p2p_peers_total) by (instance)",
@@ -2323,7 +2313,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "The number of open connections, by transport.\nThis counts multiple connections to the same peer multiple times, for older versions of IPFS.",
           "fieldConfig": {
@@ -2403,7 +2393,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "ipfs_p2p_peers_total",
@@ -2418,7 +2408,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "The number of DHT servers vs. non-DHT servers, i.e. clients, among the peers we are connected to.\nThis is calculated based on whether the peer reports that they speak the /ipfs/kad/1.0.0 protocol.\nThis counts by peer ID.",
           "fieldConfig": {
@@ -2496,7 +2486,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(plugin_metric_export_peers_supported_protocols{protocol=\"/ipfs/kad/1.0.0\"}) by (instance)",
@@ -2507,7 +2497,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "(sum by (instance) (plugin_metric_export_peers_by_agent_version)) - (sum by (instance) (plugin_metric_export_peers_supported_protocols{protocol=\"/ipfs/kad/1.0.0\"}))",
@@ -2523,7 +2513,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Sum of supported protocols over all currently connected peers, as reported by the IPFS node.\nThis counts by peer ID.",
           "fieldConfig": {
@@ -2603,7 +2593,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "plugin_metric_export_peers_supported_protocols",
@@ -2618,7 +2608,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "The plugin attempts to hold a Bitswap sender to every peer the node is connected to.\nIn order to do this, it uses connection notification mechanisms of the IPFS node, which are a bit imprecise and usually lag behind the true connectivity of the node.\nThis tracks the number of peers, connections, and available Bitswap senders, for the plugin.",
           "fieldConfig": {
@@ -2698,7 +2688,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "plugin_metric_export_bitswap_senders",
@@ -2709,7 +2699,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "plugin_metric_export_wiretap_peers",
@@ -2721,7 +2711,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "plugin_metric_export_wiretap_connections",
@@ -2737,7 +2727,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Number of currently connected peers, distinguished by their agent_version. This counts by peer ID.",
           "fieldConfig": {
@@ -2817,7 +2807,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "plugin_metric_export_peers_by_agent_version",
@@ -2832,7 +2822,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Number of currently open streams, by protocol and direction, as reported by the IPFS node.",
           "fieldConfig": {
@@ -2912,7 +2902,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "plugin_metric_export_open_streams",
@@ -2927,7 +2917,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "The number of peers, as reported by the IPFS node's peer store.\nThis counts by peer ID.",
           "fieldConfig": {
@@ -3009,7 +2999,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "(sum by (instance) (plugin_metric_export_peers_by_agent_version))",
@@ -3063,7 +3053,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "CPU time used, calculated over 30 minutes",
           "fieldConfig": {
@@ -3141,7 +3131,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "irate(process_cpu_seconds_total[30m])",
@@ -3156,7 +3146,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "fieldConfig": {
             "defaults": {
@@ -3237,7 +3227,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "go_memstats_alloc_bytes",
@@ -3248,7 +3238,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "process_resident_memory_bytes{job!=\"kubo\", job!=\"node-exporter\"}",
@@ -3264,7 +3254,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Open file descriptor count",
           "fieldConfig": {
@@ -3346,7 +3336,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "process_open_fds",
@@ -3361,7 +3351,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "fieldConfig": {
             "defaults": {
@@ -3438,7 +3428,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "go_goroutines{job=\"kubo\"}",
@@ -3453,7 +3443,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "Uptime of the IPFS node (not the system)",
           "fieldConfig": {
@@ -3527,7 +3517,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "time() - process_start_time_seconds{job=~\"kubo\"}",
@@ -3542,7 +3532,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "description": "IPFS version running and Go compiler version used to produce it.",
           "fieldConfig": {
@@ -3593,7 +3583,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -3611,7 +3601,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "P1809F7CD0C75ACF3"
           },
           "fieldConfig": {
             "defaults": {
@@ -3690,7 +3680,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "P1809F7CD0C75ACF3"
               },
               "editorMode": "code",
               "expr": "sum(rate(node_cpu_seconds_total{mode!=\"idle\"}[5m])) by(instance,mode)",
