@@ -37,7 +37,7 @@ jobs:
         fi
     - name: Lint
       run: |
-        go install github.com/mgechev/revive@latest
+        go install github.com/mgechev/revive@v1.3.3
         REVIVE_OUTPUT="$(revive -config .github/workflows/revive.toml ./...)"
         if [ -n "$REVIVE_OUTPUT" ]; then
           echo "${REVIVE_OUTPUT}"
